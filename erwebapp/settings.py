@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'g*6%+!4gbp^@x=w&edq910m9p12bl-12(hs(h+pr34_=9@$9fw'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['.emberruby.com', '69.55.49.193', 'localhost']
+ALLOWED_HOSTS = ['emberruby.com', '.emberruby.com', '69.55.49.193', 'localhost']
 
 
 # Application definition
@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    
+    'basesite',
 
 ]
 
