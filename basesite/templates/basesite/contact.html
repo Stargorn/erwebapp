@@ -1,5 +1,41 @@
 {% extends "basesite/base.html" %}
+{% load static %}
 
-{% block title %}
-<h2> This is the Contact page </h2>
+{% block nav-contact %}"nav-item active"{% endblock %}
+
+{% block content %}
+<div class="jumbotron">
+  <div class="container">
+    </br>
+    </br>
+    </br>
+    <h1>Contact us</h1>
+    </br>
+    <div class="row">
+      <!-- Email form -->
+      <div class="col">
+	<form action="">
+	  <div class="form-group">
+	    <label for="email">Email address:</label>
+	    <input type="email" class="form-control" id="email">
+	  </div>
+	  <div class="form-group">
+	    <label for="pwd">Password:</label>
+	    <input type="password" class="form-control" id="pwd">
+	  </div>
+	  <div class="form-group">
+	    <label for="message">Your message</label>
+	    <textarea class="form-control" id="message" rows="8"></textarea>
+	  </div>
+	  <button type="submit" class="btn btn-primary">Submit</button>
+	</form>
+      </div>
+      <!-- Contact details and map -->
+      <div class="col">
+
+      </div>
+    </div>
+  </div>
+</div>
+
 {% endblock %}

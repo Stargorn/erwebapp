@@ -1,5 +1,56 @@
 {% extends "basesite/base.html" %}
+{% load static %}
 
-{% block title %}
-<h2> This is the Home page </h2>
+<!-- Sets the nav-item "home" to active -->
+{% block nav-home %}"nav-item active"{% endblock %}
+
+{% block content %}
+<!-- The first section of the home page -->
+<div class="jumbotron">
+  <div class="container">
+    </br>
+    </br>
+    </br>
+    <h1 class="display-3"> This is the Home page </h1>
+    <p>
+      "This is information about the work we do."
+    </p>
+    <p>
+      <a class="btn btn-primary tn-lg" href="#" role="button">View Our Work</a>
+    </p>
+  </div>
+</div>
+<!-- The second section of the home page -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <p><img class="img-fluid rounded" src="{% static 'basesite/images/consultation.jpg' %}"></p>
+      <h2>Consultation</h2>
+      <p>
+	"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mollis faucibus odio, a ullamcorper mi consectetur in. Proin dignissim semper dignissim. Phasellus pellentesque porta tellus, vel feugiat velit pharetra at. Pellentesque ornare a est at dignissim. Aenean a dui et orci imperdiet porta vel in nunc. Nulla ac gravida justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque semper aliquet fermentum. Donec vitae ante vitae libero egestas consectetur eu eu ipsum. Praesent in eros tempor neque tempus maximus a at urna."
+      </p>
+    </div>
+    <div class="col-md-3">
+      <p><img class="img-fluid rounded" src="{% static 'basesite/images/design.jpg' %}"></p>
+      <h2>Design</h2>
+      <p>
+	"Quisque sagittis nisi sed rutrum faucibus. Suspendisse maximus magna id elit interdum semper. Proin libero erat, blandit nec dignissim nec, bibendum vitae nunc. Duis quis ultrices turpis. Integer ultricies nec erat vitae facilisis. Aliquam sollicitudin sem in felis condimentum, id consequat dui cursus. Vestibulum ac dolor vel ligula tempor luctus eget id libero. Praesent et tempor ligula. Vestibulum ac arcu aliquam, semper augue ut, pretium ligula."
+      </p>
+    </div>
+    <div class="col-md-3">
+      <p><img class="img-fluid rounded" src="{% static 'basesite/images/documentation.jpg' %}"></p>
+      <h2>Documentation</h2>
+      <p>
+	"Curabitur convallis arcu sed sodales lacinia. Nunc nunc magna, volutpat vitae elit rhoncus, blandit ultricies tellus. Vivamus vulputate tortor nisl. Vivamus eu iaculis mauris, a facilisis magna. Nulla ac luctus urna, at scelerisque nunc. Duis non lacinia sem, et tristique tortor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean ut ante a sem interdum posuere. Nullam semper malesuada nisl non tincidunt. Mauris viverra urna ante, sit amet maximus lacus dictum sed. Donec aliquet bibendum lectus, id rutrum purus malesuada ut."
+      </p>
+    </div>
+    <div class="col-md-3">
+      <p><img class="img-fluid rounded" src="{% static 'basesite/images/construction.jpg' %}"></p>
+      <h2>Construction</h2>
+      <p>
+	"Ut odio tortor, commodo ac tincidunt ut, fringilla eget velit. Ut at consequat dui. Mauris porttitor eu nulla non sollicitudin. Vestibulum porta, quam sed viverra posuere, nisi lorem posuere nibh, in malesuada augue odio vel orci. Proin sodales lorem nec eleifend lobortis. Suspendisse luctus ante vitae tortor laoreet, sit amet pellentesque leo ornare. Vivamus sit amet ex nec lacus tempor auctor. Integer mattis ullamcorper elit eu elementum. Suspendisse et enim dictum, varius arcu ut, laoreet nisi. Sed rutrum erat est."
+      </p>
+    </div>
+  </div>
+</div>
 {% endblock %}
