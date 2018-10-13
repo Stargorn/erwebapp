@@ -10,32 +10,61 @@
     </br>
     </br>
     <h1>Contact us</h1>
-    </br>
-    <div class="row">
-      <!-- Email form -->
-      <div class="col">
-	<form action="">
-	  <div class="form-group">
-	    <label for="email">Email address:</label>
-	    <input type="email" class="form-control" id="email">
-	  </div>
-	  <div class="form-group">
-	    <label for="pwd">Password:</label>
-	    <input type="password" class="form-control" id="pwd">
-	  </div>
-	  <div class="form-group">
-	    <label for="message">Your message</label>
-	    <textarea class="form-control" id="message" rows="8"></textarea>
-	  </div>
-	  <button type="submit" class="btn btn-primary">Submit</button>
-	</form>
-      </div>
-      <!-- Contact details and map -->
-      <div class="col">
-
-      </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <!-- Email form -->
+    <div class="col-md-5">
+      <legend>Send us a message</legend>
+      <form action="">
+	<div class="form-group">
+	  <label for"name">Your name:</label>
+	  <input type="name" class="form-control" id="name">
+	</div>
+	<div class="form-group">
+	  <label for="email">Email address:</label>
+	  <input type="email" class="form-control" id="email">
+	</div>
+	<div class="form-group">
+	  <label for="message">Your message</label>
+	  <textarea class="form-control" id="message" rows="8"></textarea>
+	</div>
+	<button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+    <!-- Spacer for smaller screen resolutions -->
+    <div class="col-md-2">
+</br>
+</br>
+    </div>
+    <!-- Contact details and map -->
+    <div class="col-md-5">
+      <form>
+	<legend>Our office</legend>
+	<address>
+	  <strong>Ember Ruby Design</strong>
+	  </br>
+	  1 Imaginary Lane
+	  </br>
+	  Nelson
+	  </br>
+	  NEW ZEALAND
+	  </br>
+	  5000
+	</address>
+	<address>
+	  <strong>Phone</strong>
+	  </br>
+	  <a href="tel:555-555-5555">(555) 555-5555</a>
+	</address>
+	<address>
+	  <strong>Email</strong>
+	  </br>
+	  <a href="mailto:info@emberruby.com">info@emberruby.com</a>
+	</address>
+      </form>
     </div>
   </div>
 </div>
-
 {% endblock %}
