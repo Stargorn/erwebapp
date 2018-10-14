@@ -13,11 +13,11 @@ class Image(models.Model):
     image = models.ImageField(upload_to='img', null = True)
     project = models.ForeignKey(Project, on_delete=models.CASCADE)
     
-class TimeLine(models.Model):
-    project = models.ForeignKey(Project, on_delete=models.CASCADE)
+#class TimeLine(models.Model):
+#    project = models.ForeignKey(Project, on_delete=models.CASCADE)
 
-class Note(models.Model):
-    project = models.ForeignKey(Project, on_delete=models.CASCADE)
-    author = models.CharField(max_length=100)
-    date = models.DateTimeField('date written')
-    note = models.CharField(max_length=2000)
+#class Note(models.Model):
+#    project = models.ForeignKey(Project, on_delete=models.CASCADE)
+#    author = models.CharField(max_length=100)
+#    date = models.DateTimeField('date written')
+#    note = models.CharField(max_length=2000)

@@ -31,15 +31,15 @@ ALLOWED_HOSTS = ['emberruby.com', '.emberruby.com', '69.55.49.193', 'localhost']
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.admin',
+    'basesite',
+    'projects',
+
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
-    'basesite',
-    'projects',
+    'django.contrib.admin',
 
 ]
 
@@ -58,7 +58,7 @@ ROOT_URLCONF = 'erwebapp.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
