@@ -20,7 +20,7 @@
       <!-- The navigation bar -->
       {% block nav %}
       <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-	<a class="navbar-brand" href="#">
+	<a class="navbar-brand">
 	  <img src="{% static 'basesite/images/emberrubylogo.jpg' %}" alt="logo" class="rounded" style="width:70px;">
 	</a>
 	<a class="navbar-brand" href="#">Ember Ruby Design</a>
@@ -29,7 +29,7 @@
 	</button>
 	<div class="collapse navbar-collapse text-right" id="navbarCollapse">
 	  <ul class="navbar-nav ml-auto">
-	    <!-- Blocks are used to set the nav-item to active on their respective html page -->
+	    <!--  Blocks are to set the nav-item to active on the respective html template -->
 	    <li class={% block nav-home %}"nav-item"{% endblock %}>
 	      <a class="nav-link" href="{% url 'basesite:home' %}">Home</a>
 	    </li>
@@ -37,7 +37,7 @@
 	      <a class="nav-link" href="{% url 'basesite:about' %}">About</a>
 	    </li>
 	    <li class={% block nav-ourwork %}"nav-item"{% endblock %}>
-	      <a class="nav-link" href="#">Our Work</a>
+	      <a class="nav-link" href="{% url 'projects:ourwork' %}">Our Work</a>
 	    </li>
 	    <li class={% block nav-contact %}"nav-item"{% endblock %}>
 	      <a class="nav-link" href="{% url 'basesite:contact' %}">Contact</a>

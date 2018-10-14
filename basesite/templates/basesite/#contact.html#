@@ -1,0 +1,31 @@
+{% extends "basesite/base.html" %}
+{% load static %}
+
+{% block nav-contact %}"nav-item active"{% endblock %}
+
+{% block content %}
+<div class="jumbotron">
+  <div class="container">
+    </br>
+    </br>
+    </br>
+    <h1 class="display-3">Contact us</h1>
+    <div class="row">
+      <!-- Email form -->
+      <div class="col">
+	<form action="">
+	  <div class="form-group">
+	    <label for="email">Email address:</label>
+	    <input type="email" class="form-control" id="email">
+	    
+	  </div>
+      </div>
+      <!-- Contact details and map -->
+      <div class="col">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
