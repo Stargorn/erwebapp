@@ -17,6 +17,19 @@
     <!-- Email form -->
     <div class="col-md-5">
       <legend>Send us a message</legend>
+      <form method="post">
+	{% csrf_token %}
+	{% for field in form %}
+	<div class="form-group">
+	  <label class="control-label">{{ field.label }}</label>
+	  <input type="text" class="form-control" id="id_{{ field.name }}" name="{{ field.name }}">
+	</div>
+	{% endfor %}
+	<div class="form-actions">
+	  <button type="submit" class="btn btn-primary">Send</button>
+	</div>
+      </form>
+<!--
       <form action="">
 	<div class="form-group">
 	  <label for"name">Your name:</label>
@@ -32,6 +45,8 @@
 	</div>
 	<button type="submit" class="btn btn-primary">Submit</button>
       </form>
+-->
+
     </div>
     <!-- Spacer for smaller screen resolutions -->
     <div class="col-md-2">

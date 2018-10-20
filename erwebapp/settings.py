@@ -58,7 +58,7 @@ ROOT_URLCONF = 'erwebapp.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        'DIRS': [os.path.join(BASE_DIR, 'templates/')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -127,3 +127,15 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+
+# Email settings
+EMAIL_PORT = 465
+EMAIL_BACKEND = 'django_smtp_ssl.SSLEmailBackend'
+EMAIL_USE_SSL = True
+EMAIL_HOST = 'smtp.zoho.com'
+EMAIL_HOST_USER = 'info@emberruby.com'
+EMAIL_HOST_PASSWORD = 'Tienshanpai69'
+DEFAULT_FROM_EMAIL = "info@emberruby.com"
+SERVER_EMAIL = "info@emberruby.com"
+
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
