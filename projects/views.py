@@ -4,13 +4,14 @@ from django.views import generic
 from . import models
 
 
-class ProjectIndex(generic.ListView):
+class ProjectListView(generic.ListView):
+    model = models.Project
     queryset = models.Project.objects.all()
     template_name = 'projects/ourwork.html'
     
     
 
-class ProjectDetail(generic.DetailView):
+class ProjectDetailView(generic.DetailView):
     model = models.Project
     template_name = 'projects/project.html'
      

@@ -45,7 +45,7 @@
 
     <!-- Contact details and map -->
 
-    <div class="col-md-5">
+<!--    <div class="col-md-12"> -->
       <form>
 	<legend>Our office</legend>
 	<address>
@@ -70,7 +70,7 @@
 	  <a href="mailto:info@emberruby.com">info@emberruby.com</a>
 	</address>
       </form>
-    </div>
+      <!--    </div>
   </div>
 </div>
 {% endblock %}

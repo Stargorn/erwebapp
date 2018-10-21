@@ -15,17 +15,20 @@
 
 <div class="container">
   <div class="card-deck">
-    {% for project in project_set %}
+    {% for project in object_list %}
     <div class="card">
-      <img class="card-img-top" src="">
-      <div class="card-body">
-	<h4 class="card-title">{% project.title %}</h4>
+      <img class="card-img-top" src="{{ project.thumb_image }}">
+      <div class="card-img-overlay">
+	<h4 class="card-title">{{ project.title }}</h4>
 	<p class="card-text">
-	  {% project.description %}
+	  {{ project.description }}
 	</p>
       </div>
     </div>
+    {% empty %}
+    <p> No projects yet. </p>
     {% endfor %}
   </div>
 </div>
+
 {% endblock %}

@@ -20,7 +20,7 @@ def contact(request):
             your_email = form.cleaned_data['your_email']
             message = form.cleaned_data['message']
             try:
-                send_mail(subject, message, your_email, ['info@emberruby.com'])
+                send_mail(subject, message, your_email, ['admin@emberruby.com'])
             except BadHeaderError:
                 return HttpResponse('Invalid header found.')
             return redirect('basesite:success')
